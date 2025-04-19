@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Contact </title>
+    <meta name="author" content="Frank Padovan">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .flex-container>main {
+            width: 100vw;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> Contact </h1>
+    </header>
+
+    <nav class="flex-nav">
+        <ul>
+            <li><a href="index.htm"> Index </a></li>
+            <li><a href="minerals.htm"> Minerals </a></li>
+            <li><a href="equipment.htm"> Equipment </a></li>
+            <li><a href="companies.htm"> Companies </a></li>
+            <li><a href="contact.htm"> Contact </a></li>
+        </ul>
+    </nav>
+    <div class="flex-contact">
+        <main>
+            <form action="additem.php" method="post">
+                <label for="requestor"> Surname: </label>
+                <input type="text" id="requestor" name="requestor">
+                <label for="email"> Contact email: </label>
+                <input type="text" id="email" name="email">
+                <label for="phone"> Phone: </label>
+                <input type="text" id="phone" name="phone">
+
+                <select id="infotype" name="infotype">
+                    <option value="company">Company</option>
+                    <option value="mineral">Mineral</option>
+                    <option value="equipment">Equipment</option>
+                </select>
+
+                <textarea>Enter suggestion...</textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>

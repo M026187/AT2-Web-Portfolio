@@ -1,0 +1,235 @@
+* {
+    border-style: none;
+    color: black;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 3vh;
+    font-weight: normal;
+    margin: 0px;
+    padding: 0px;
+}
+
+#companyAside {
+    padding-top: 20vh;
+}
+
+.flex-contact {
+    display: flex;
+    border: solid;
+    justify-content: center;
+    width: 100vw;
+    height: 80vh;
+    padding-top: 4vh;
+}
+
+.flex-contact form {
+    width: 20vw;
+    background-color: #f2f2f2;
+    outline-style: solid;
+    border: 1vh;
+    padding: 2vh;
+    outline: darkblue solid 1vh;
+    justify-content: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.flex-container aside {
+    width: 20vw;
+    height: 100vh;
+    border-style: solid;
+    line-height: 1;
+}
+
+.flex-container aside img {
+    width: 20vw;
+}
+
+.flex-container aside figcaption {
+    font-size: 2vh;
+    text-align: center;
+}
+
+.flex-container aside footer {
+    text-align: center;
+}
+
+.flex-container aside footer small {
+    font-size: 1vh;
+}
+
+.flex-container main {
+    width: 80vw;
+    border-style: solid;
+}
+
+.flex-container main table {
+    display: flex;
+    justify-content: center;
+    padding: 2vh;
+}
+
+.flex-nav {
+    display: flex;
+    border-style: none;
+    justify-content: center;
+    width: 100vw;
+    height: 6vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.flex-nav li {
+    display: inline-flex;
+    list-style-type: none;
+    text-align: center;
+}
+
+.flex-nav li a {
+    border-style: none;
+    color: white;
+    font-size: 3vh;
+    text-align: center;
+    padding: 1.2vh 6vh;
+}
+
+.flex-nav li a:hover {
+    background-color: black;
+}
+
+.flex-nav ul {
+    background-color: darkblue;
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: lightblue;
+}
+
+h1 {
+    color: darkblue;
+    font-size: 5vh;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    color: darkblue;
+    font-size: 4vh;
+    font-weight: bold;
+    padding-top: 2vw;
+    padding-left: 1vw;
+}
+
+h3 {
+    color: darkblue;
+    font-size: 3vh;
+    font-weight: bold;
+    padding-top: 2vw;
+    padding-left: 1vw;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 8vh;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    padding-top: 14vh;
+}
+
+input[type=text],
+select {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 2vh;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style-type: square;
+    list-style-position: inside;
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
+p {
+    padding-top: 1vw;
+    padding-left: 2vw;
+}
+
+textarea {
+    width: 100%;
+    height: 20vh;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+tr:nth-child(even) {
+    background-color: lightgrey;
+}
+
+tr:hover {
+    background-color: lightblue;
+}
+
+tr:nth-child(even):hover {
+    background-color: lightblue;
+}
+
+th {
+    background-color: darkblue;
+    color: white;
+}
+
+video {
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+    border: 10px solid black;
+    border-radius: 20px;
+    opacity: 0.5;
+}
+
+@media print {
+    aside {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+}
