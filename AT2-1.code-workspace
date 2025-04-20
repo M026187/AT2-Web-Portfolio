@@ -16,5 +16,12 @@
 			}
 
 		]
+	},
+	"settings": {
+		"githubPullRequests.remotes": [
+			"origin",
+			"upstream",
+			"https://github.com/M026187/AT2-Web-Portfolio"
+		]
 	}
 }
