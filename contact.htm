@@ -6,6 +6,7 @@
     <meta name="author" content="Frank Padovan">
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
+    <script src="forms.js"></script>
     <style>
         .flex-container>main {
             width: 100vw;
@@ -17,7 +18,6 @@
     <header>
         <h1> Contact </h1>
     </header>
-
     <nav class="flex-nav">
         <ul>
             <li><a href="index.htm"> Index </a></li>
@@ -29,21 +29,44 @@
     </nav>
     <div class="flex-contact">
         <main>
-            <form action="additem.php" method="post">
-                <label for="requestor"> Surname: </label>
-                <input type="text" id="requestor" name="requestor">
-                <label for="email"> Contact email: </label>
-                <input type="text" id="email" name="email">
-                <label for="phone"> Phone: </label>
-                <input type="text" id="phone" name="phone">
+            <form name="FeedbackForm" onsubmit="return validateForm()" action="additem.php" method="post">
+                <div class="feedback-message">
+                    Your feedback is important to us. If you have anything that you wish to see improved on this
+                    website, please fill in the below information and let us know.
+                </div>
+                <div>
+                    <label class="feedback-message" for="requestor"> Requestor Name: </label>
+                    <input type="text" id="requestor" name="requestor" />
+                    <label id="name-error" class="error-message"></label>
+                </div>
 
-                <select id="infotype" name="infotype">
-                    <option value="company">Company</option>
-                    <option value="mineral">Mineral</option>
-                    <option value="equipment">Equipment</option>
-                </select>
+                <div>
+                    <label class="feedback-message" for="email"> Email Address: </label>
+                    <input type="text" id="email" name="email" />
+                    <label id="address-error" class="error-message"></label>
+                </div>
 
-                <textarea>Enter suggestion...</textarea>
+                <div>
+                    <label class="feedback-message" for="phone"> Phone Number: </label>
+                    <input type="text" id="phone" name="phone" />
+                    <label id="phone-error" class="error-message"></label>
+                </div>
+
+                <div>
+                    <label class="feedback-message" for="type"> Page Request: </label>
+                    <select id="infotype" name="infotype">
+                        <option class="feedback-message" value="mineral">Minerals</option>
+                        <option class="feedback-message" value="equipment">Equipment</option>
+                        <option class="feedback-message" value="company">Companies</option>
+                    </select>
+                    <label id="infotype-error" class="error-message"></label>
+                </div>
+
+                <div>
+                    <label class="feedback-message" for="request"> Request: </label>
+                    <textarea id="request" name="request"></textarea>
+                    <label id="request-error" class="error-message"></label>
+                </div>
 
                 <input type="submit" value="Submit">
 

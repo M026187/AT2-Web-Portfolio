@@ -9,39 +9,44 @@
 }
 
 #companyAside {
-    padding-top: 20vh;
+    padding-top: 4vh;
+}
+
+.error-message {
+    color: red;
+    font-size: 1.5vh;
+}
+
+.feedback-message {
+    font-size: 2vh;
+    text-align: center;
+    padding-bottom: 2vh;
 }
 
 .flex-contact {
     display: flex;
-    border: solid;
-    justify-content: center;
     width: 100vw;
-    height: 80vh;
-    padding-top: 4vh;
+    height: 100vh;
+    padding-top: 2vh;
+    justify-content: center;
 }
 
 .flex-contact form {
-    width: 20vw;
-    background-color: #f2f2f2;
-    outline-style: solid;
-    border: 1vh;
-    padding: 2vh;
-    outline: darkblue solid 1vh;
-    justify-content: center;
+    width: 40vh;
+    background-color: lightgrey;
+    border: 0.5vh solid white;
+    border-radius: 4vh;
+    padding: 4vh;
 }
 
 .flex-container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
 }
 
 .flex-container aside {
     width: 20vw;
     height: 100vh;
-    border-style: solid;
-    line-height: 1;
+    padding-top: 4vh;
 }
 
 .flex-container aside img {
@@ -51,22 +56,25 @@
 .flex-container aside figcaption {
     font-size: 2vh;
     text-align: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 
 .flex-container aside footer {
     text-align: center;
+    line-height: 0.25;
 }
 
-.flex-container aside footer small {
+.flex-container aside small {
     font-size: 1vh;
 }
 
 .flex-container main {
     width: 80vw;
-    border-style: solid;
+    padding-left: 2vh;
 }
 
-.flex-container main table {
+.flex-container table {
     display: flex;
     justify-content: center;
     padding: 2vh;
@@ -74,36 +82,30 @@
 
 .flex-nav {
     display: flex;
-    border-style: none;
     justify-content: center;
     width: 100vw;
     height: 6vh;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-}
-
-.flex-nav li {
-    display: inline-flex;
-    list-style-type: none;
-    text-align: center;
-}
-
-.flex-nav li a {
-    border-style: none;
-    color: white;
-    font-size: 3vh;
-    text-align: center;
-    padding: 1.2vh 6vh;
-}
-
-.flex-nav li a:hover {
-    background-color: black;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
 }
 
 .flex-nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 1vh 4vw;
+}
+
+.flex-nav a {
+    border-style: solid;
+    border-radius: 4vh;
     background-color: darkblue;
-    padding: 0px;
-    margin: 0px;
+    color: white;
+    font-size: 3vh;
+    padding: 1vh 4vw;
+}
+
+.flex-nav a:hover {
+    background-color: black;
 }
 
 a {
@@ -113,6 +115,10 @@ a {
 
 a:hover {
     background-color: lightblue;
+}
+
+body {
+    background-color: lightgrey;
 }
 
 h1 {
@@ -144,35 +150,34 @@ header {
     justify-content: center;
     width: 100vw;
     height: 8vh;
+    background-color: white;
 }
 
 iframe {
     width: 100%;
     height: 100%;
-    padding-top: 14vh;
 }
 
 input[type=text],
 select {
     display: inline-block;
     width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 1vh;
     box-sizing: border-box;
     font-size: 2vh;
-    padding: 12px 20px;
-    margin: 8px 0;
+    margin-top: 1vh;
+    padding: 1vh;
 }
 
 input[type=submit] {
     width: 100%;
     background-color: #4CAF50;
-    border: none;
-    border-radius: 4px;
+    border: solid;
+    border-radius: 4vh;
     cursor: pointer;
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
+    padding: 2vh;
+    margin-top: 2vh;
 }
 
 input[type=submit]:hover {
@@ -193,13 +198,19 @@ p {
 
 textarea {
     width: 100%;
-    height: 20vh;
+    height: 10vh;
     box-sizing: border-box;
-    border-radius: 4px;
+    border-radius: 1vh;
+    font-size: 2vh;
+    padding: 1vh;
+}
+
+td {
+    padding: 1vh;
 }
 
 tr:nth-child(even) {
-    background-color: lightgrey;
+    background-color: white;
 }
 
 tr:hover {
