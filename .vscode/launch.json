@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open index.htm",
-            "file": "c:\\Users\\fp85w\\Desktop\\AT2 Web Portfolio\\index.htm"
+            "file": "c:\\Users\\fp85w\\Desktop\\Western Australia Mining Website\\index.htm"
         }
     ]
 }
